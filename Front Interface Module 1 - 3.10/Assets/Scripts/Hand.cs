@@ -12,7 +12,6 @@ public class Hand : MonoBehaviourPunCallbacks
     public SteamVR_Action_Boolean m_TeleportAction;
    // public SteamVR_Action_Boolean m_ClickAction;
 
-
     private SteamVR_Behaviour_Pose m_Pose = null;
     private FixedJoint m_Joint = null;
 
@@ -23,27 +22,28 @@ public class Hand : MonoBehaviourPunCallbacks
     private Interactable m_CurrentInteractable = null;
     public List<Interactable> m_ContactInteractables = new List<Interactable>();
 
+    public GameObject player;
+    public Transform Teleport_Location;
+    public Transform Teleport_Location1;
+
     private void Awake()
     {
         if (photonView.IsMine)
         {
             m_Pose = GetComponent<SteamVR_Behaviour_Pose>();
             m_Joint = GetComponent<FixedJoint>();
-        }
-     
+        }     
     }
 
     private void Update()
     {
         if (photonView.IsMine)
-        {
-            
+        {            
             //Down
             if (m_GrabAction.GetStateDown(m_Pose.inputSource))
             {
                 print(m_Pose.inputSource + "Trigger Down");
-                Pickup();
-                
+                Pickup();                
             }
 
             //Up
@@ -60,9 +60,8 @@ public class Hand : MonoBehaviourPunCallbacks
             // Teleport
             if (m_TeleportAction.GetLastStateUp(m_Pose.inputSource))
                 TryTeleport();
-
-
         }
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -156,7 +155,7 @@ public class Hand : MonoBehaviourPunCallbacks
         //GameObject.Find("M_Pointer").active = false;
 
         //Get Camera Rig, and hand position
-        Transform cameraRig = SteamVR_Render.Top().origin;
+        /*Transform cameraRig = SteamVR_Render.Top().origin;
         Vector3 headPosition = SteamVR_Render.Top().head.position;
 
         //Figure out translation
@@ -164,7 +163,12 @@ public class Hand : MonoBehaviourPunCallbacks
         Vector3 translateVector = M_Pointer.transform.position - groundPosition;
 
         //Move
-        StartCoroutine(MoveRig(cameraRig, translateVector));
+        StartCoroutine(MoveRig(cameraRig, translateVector));*/
+
+        //Debug.Log("Position = " + cameraRig.transform.position);        
+
+        player.transform.position = Teleport_Location.transform.position;
+        Debug.Log("Teleport");
     }
 
   

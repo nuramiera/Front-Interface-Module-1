@@ -964,6 +964,9 @@ MonoBehaviour:
     actionPath: /actions/default/in/Teleport
     needsReinit: 0
   m_ContactInteractables: []
+  player: {fileID: 6575696536226483720}
+  Teleport_Location: {fileID: 0}
+  Teleport_Location1: {fileID: 0}
 --- !u!1 &6575696536226431596
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,6 +1200,9 @@ MonoBehaviour:
     actionPath: /actions/default/in/Teleport
     needsReinit: 0
   m_ContactInteractables: []
+  player: {fileID: 0}
+  Teleport_Location: {fileID: 0}
+  Teleport_Location1: {fileID: 0}
 --- !u!1 &6575696536226483508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1351,14 +1357,14 @@ MonoBehaviour:
   size: 0
   color: {r: 0, g: 1, b: 1, a: 1}
   vertices:
-  - {x: 1.9499993, y: 0.01, z: -0.9000002}
-  - {x: -1.9499993, y: 0.01, z: -0.9000002}
-  - {x: -1.9499993, y: 0.01, z: 0.9000002}
-  - {x: 1.9499993, y: 0.01, z: 0.9000002}
-  - {x: 2.0999994, y: 0.01, z: -1.0500002}
-  - {x: -2.0999994, y: 0.01, z: -1.0500002}
-  - {x: -2.0999994, y: 0.01, z: 1.0500002}
-  - {x: 2.0999994, y: 0.01, z: 1.0500002}
+  - {x: 1.9999996, y: 0.01, z: -1.0500002}
+  - {x: -1.9999996, y: 0.01, z: -1.0500002}
+  - {x: -1.9999996, y: 0.01, z: 1.0500002}
+  - {x: 1.9999996, y: 0.01, z: 1.0500002}
+  - {x: 2.1499996, y: 0.01, z: -1.2000002}
+  - {x: -2.1499996, y: 0.01, z: -1.2000002}
+  - {x: -2.1499996, y: 0.01, z: 1.2000002}
+  - {x: 2.1499996, y: 0.01, z: 1.2000002}
 --- !u!114 &116534857221162232
 MonoBehaviour:
   m_ObjectHideFlags: 0

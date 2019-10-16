@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.newmultiplayer.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "E:\\Users\\Nur Amiera\\Desktop\\Module 1 - Grab Scene\\Front Interface Module 1 - 3.10\\actions.json",
+      "action_manifest_path": "E:\\Users\\Nur Amiera\\Desktop\\GitHub\\Front-Interface-Module-1\\Front Interface Module 1 - 3.10\\actions.json",
       "strings": {
         "en_us": {
           "name": "Front Interface [Testing]"

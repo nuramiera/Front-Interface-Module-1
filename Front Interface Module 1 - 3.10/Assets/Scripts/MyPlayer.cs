@@ -39,6 +39,7 @@ public class MyPlayer : MonoBehaviourPunCallbacks ,  IPunObservable
             photonView.RPC("Pickup", RpcTarget.AllBuffered);
             photonView.RPC("Drop", RpcTarget.AllBuffered);
             photonView.RPC("TryTeleport", RpcTarget.AllBuffered);
+            photonView.RPC("Testing", RpcTarget.AllBuffered);
 
 
             // MyPlayer.LocalPlayerInstance = this.gameObject;

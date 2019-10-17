@@ -796,6 +796,7 @@ GameObject:
   - component: {fileID: 6575696536226240321}
   - component: {fileID: 6575696536226240351}
   - component: {fileID: 6575696536226240322}
+  - component: {fileID: 5505830774886955594}
   m_Layer: 0
   m_Name: Controller (left)
   m_TagString: Controller
@@ -964,7 +965,20 @@ MonoBehaviour:
     actionPath: /actions/default/in/Teleport
     needsReinit: 0
   m_ContactInteractables: []
-  cameraRig: {fileID: 6575696536226483720}
+  CameraTesting: {fileID: 6575696536226483720}
+--- !u!114 &5505830774886955594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6575696536226240350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42874f4e0442ad488547b987fe47da0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRig: {fileID: 6575696536226734064}
 --- !u!1 &6575696536226431596
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,6 +1044,7 @@ GameObject:
   - component: {fileID: 6575696536226471291}
   - component: {fileID: 6575696536226471289}
   - component: {fileID: 6575696536226471292}
+  - component: {fileID: 4655957547344282002}
   m_Layer: 0
   m_Name: Controller (right)
   m_TagString: Controller
@@ -1198,7 +1213,20 @@ MonoBehaviour:
     actionPath: /actions/default/in/Teleport
     needsReinit: 0
   m_ContactInteractables: []
-  cameraRig: {fileID: 6575696536226483720}
+  CameraTesting: {fileID: 6575696536226483720}
+--- !u!114 &4655957547344282002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6575696536226471288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42874f4e0442ad488547b987fe47da0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRig: {fileID: 6575696536226734064}
 --- !u!1 &6575696536226483508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2081,15 +2109,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71336e835d97d9145ba924d73d52240b, type: 3}
---- !u!1 &6600101407473880922 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1570184004, guid: 71336e835d97d9145ba924d73d52240b,
-    type: 3}
-  m_PrefabInstance: {fileID: 6600101406896444446}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6600101407473880920 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1570184006, guid: 71336e835d97d9145ba924d73d52240b,
+    type: 3}
+  m_PrefabInstance: {fileID: 6600101406896444446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6600101407473880922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1570184004, guid: 71336e835d97d9145ba924d73d52240b,
     type: 3}
   m_PrefabInstance: {fileID: 6600101406896444446}
   m_PrefabAsset: {fileID: 0}
@@ -2155,15 +2183,15 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 114000012051789102, guid: 6def53d002137b747aec0b29551e0e25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6def53d002137b747aec0b29551e0e25, type: 3}
---- !u!4 &9113226870749057467 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4000012125075130, guid: 6def53d002137b747aec0b29551e0e25,
-    type: 3}
-  m_PrefabInstance: {fileID: 9112640716643051265}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &9112215751254960427 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
+    type: 3}
+  m_PrefabInstance: {fileID: 9112640716643051265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9113226870749057467 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4000012125075130, guid: 6def53d002137b747aec0b29551e0e25,
     type: 3}
   m_PrefabInstance: {fileID: 9112640716643051265}
   m_PrefabAsset: {fileID: 0}

@@ -39,5 +39,6 @@ MonoBehaviour:
   - MoveRig
   - RPC_Function
   - UpdatePointer
+  - Testing
   DisableAutoOpenWizard: 1
   ShowSettings: 1

@@ -23,7 +23,8 @@ public class Hand : MonoBehaviourPunCallbacks
     public List<Interactable> m_ContactInteractables = new List<Interactable>();
 
     [SerializeField]
-    private Transform CameraTesting;    
+    private Transform CameraTesting;
+    private Vector3 Camera;
 
     private void Awake()
     {
@@ -155,27 +156,34 @@ public class Hand : MonoBehaviourPunCallbacks
 
         //Get Camera Rig, and hand position
         //Transform cameraRig = SteamVR_Render.Top().origin;
-        Vector3 headPosition = SteamVR_Render.Top().head.position;
+        //Vector3 headPosition = SteamVR_Render.Top().head.position;
 
         CameraTesting = GameObject.FindWithTag("Player").transform;
 
         if (GameObject.FindWithTag("Player").transform == CameraTesting)
         {
             Debug.Log("Found!" + CameraTesting);
-        }        
+        }
 
-        //Debug.Log("Camera Rig: " + cameraRig);
-        //Camera Rig: [CameraRig](Clone) (UnityEngine.Transform)
+        Camera = GameObject.FindWithTag("Camera").transform.position;
+
+        if (GameObject.FindWithTag("Camera").transform)
+        {
+            Debug.Log("Camera Found ! " + Camera);
+        }
+        
+
+        
 
         //Figure out translation
-        Vector3 groundPosition = new Vector3(headPosition.x, CameraTesting.position.y, headPosition.z);
+        Vector3 groundPosition = new Vector3(Camera.x, CameraTesting.position.y, Camera.z);
         Vector3 translateVector = M_Pointer.transform.position - groundPosition;
 
         //Move
         StartCoroutine(MoveRig(CameraTesting, translateVector));
 
         Debug.Log("Position = " + CameraTesting.transform.position);        
-        Debug.Log("Head Position: " + headPosition);
+        Debug.Log("Head Position: " + Camera);
         Debug.Log("Teleport");
     }
 

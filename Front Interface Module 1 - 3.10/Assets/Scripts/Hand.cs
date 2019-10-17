@@ -158,19 +158,14 @@ public class Hand : MonoBehaviourPunCallbacks
         //Transform cameraRig = SteamVR_Render.Top().origin;
         //Vector3 headPosition = SteamVR_Render.Top().head.position;
 
+        //transform
         CameraTesting = GameObject.FindWithTag("Player").transform;
+        Debug.Log("Camera Rig Found!" + CameraTesting);        
 
-        if (GameObject.FindWithTag("Player").transform == CameraTesting)
-        {
-            Debug.Log("Found!" + CameraTesting);
-        }
-
+        //vector3
         Camera = GameObject.FindWithTag("Camera").transform.position;
-
-        if (GameObject.FindWithTag("Camera").transform)
-        {
-            Debug.Log("Camera Found ! " + Camera);
-        }     
+        Debug.Log("Camera Found ! " + Camera);
+            
 
         //Figure out translation
         Vector3 groundPosition = new Vector3(Camera.x, CameraTesting.position.y, Camera.z);

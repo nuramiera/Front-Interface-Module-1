@@ -964,9 +964,7 @@ MonoBehaviour:
     actionPath: /actions/default/in/Teleport
     needsReinit: 0
   m_ContactInteractables: []
-  player: {fileID: 6575696536226483720}
-  Teleport_Location: {fileID: 0}
-  Teleport_Location1: {fileID: 0}
+  cameraRig: {fileID: 6575696536226483720}
 --- !u!1 &6575696536226431596
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,9 +1198,7 @@ MonoBehaviour:
     actionPath: /actions/default/in/Teleport
     needsReinit: 0
   m_ContactInteractables: []
-  player: {fileID: 0}
-  Teleport_Location: {fileID: 0}
-  Teleport_Location1: {fileID: 0}
+  cameraRig: {fileID: 6575696536226483720}
 --- !u!1 &6575696536226483508
 GameObject:
   m_ObjectHideFlags: 0

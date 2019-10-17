@@ -170,10 +170,7 @@ public class Hand : MonoBehaviourPunCallbacks
         if (GameObject.FindWithTag("Camera").transform)
         {
             Debug.Log("Camera Found ! " + Camera);
-        }
-        
-
-        
+        }     
 
         //Figure out translation
         Vector3 groundPosition = new Vector3(Camera.x, CameraTesting.position.y, Camera.z);
